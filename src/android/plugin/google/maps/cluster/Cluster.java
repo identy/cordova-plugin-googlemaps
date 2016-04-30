@@ -87,19 +87,21 @@ public class Cluster {
         //markerId = cnt > 50 ? R.drawable.m3 : markerId;
         //markerId = cnt > 100 ? R.drawable.m4 : markerId;
         //markerId = cnt > 200 ? R.drawable.m5 : markerId;
-        Bitmap iconBitmap = BitmapFactory.decodeResource(mapCtrl.cordova.getActivity().getResources(), markerId);
-        currentIconBitmap = iconBitmap.copy(Bitmap.Config.ARGB_8888, true);
-        Canvas iconCanvas = new Canvas(currentIconBitmap);
         
-        String txt = "" + markerHash.size();
-        Paint paint = new Paint();
-        paint.setColor(Color.WHITE);
-        paint.setTextSize(20);
-        float txtWidth = paint.measureText(txt, 0, txt.length());
-        int xPos = (int) ((iconCanvas.getWidth() - txtWidth) / 2);
-        int yPos = (int) ((iconCanvas.getHeight() / 2) - ((paint.descent() + paint.ascent()) / 2)) ; 
-        iconCanvas.drawText(txt, xPos, yPos, paint);
-        opts.icon(BitmapDescriptorFactory.fromBitmap(currentIconBitmap));
+        //Bitmap iconBitmap = BitmapFactory.decodeResource(mapCtrl.cordova.getActivity().getResources(), markerId);
+        //currentIconBitmap = iconBitmap.copy(Bitmap.Config.ARGB_8888, true);
+        //Canvas iconCanvas = new Canvas(currentIconBitmap);
+        
+        // String txt = "" + markerHash.size();
+        // Paint paint = new Paint();
+        // paint.setColor(Color.WHITE);
+        // paint.setTextSize(20);
+        // float txtWidth = paint.measureText(txt, 0, txt.length());
+        // int xPos = (int) ((iconCanvas.getWidth() - txtWidth) / 2);
+        // int yPos = (int) ((iconCanvas.getHeight() / 2) - ((paint.descent() + paint.ascent()) / 2)) ; 
+        // iconCanvas.drawText(txt, xPos, yPos, paint);
+        // opts.icon(BitmapDescriptorFactory.fromBitmap(currentIconBitmap));
+        
         opts.anchor(0.5f, 0.5f);
         clusterMarker = mapCtrl.map.addMarker(opts);
       } else {
