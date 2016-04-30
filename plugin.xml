@@ -40,6 +40,9 @@
             <feature name="Geocoder">
                 <param name="android-package" value="plugin.google.maps.MyGeocoder" />
             </feature>
+            <feature name="MarkerCluster">
+                <param name="android-package" value="plugin.google.maps.experimental.MarkerCluster" />
+            </feature>
         </config-file>
 
         <framework src="com.google.android.gms:play-services-maps:+" />
@@ -68,6 +71,14 @@
         <source-file src="src/android/plugin/google/maps/PluginUtil.java" target-dir="src/plugin/google/maps" />
         <source-file src="src/android/plugin/google/maps/PluginAsyncInterface.java" target-dir="src/plugin/google/maps" />
         
+        <!-- cluster -->
+        <source-file src="src/android/plugin/google/maps/PluginMarkerCluster.java" target-dir="src/plugin/google/maps" />
+        <source-file src="src/android/plugin/google/maps/experimental/MarkerCluster.java" target-dir="src/plugin/google/maps/experimental" />
+        <source-file src="src/android/plugin/google/maps/experimental/Cluster.java" target-dir="src/plugin/google/maps/experimental" />
+        <source-file src="src/android/plugin/google/maps/experimental/AsyncCluster.java" target-dir="src/plugin/google/maps/experimental" />
+        <source-file src="src/android/plugin/google/maps/experimental/MarkerClusterUtil.java" target-dir="src/plugin/google/maps/experimental" />
+        <source-file src="src/android/plugin/google/maps/experimental/MarkerJsonData.java" target-dir="src/plugin/google/maps/experimental" />
+
         <config-file target="AndroidManifest.xml" parent="/manifest/application">
             <meta-data
               android:name="com.google.android.maps.v2.API_KEY"
