@@ -82,6 +82,13 @@
         <source-file src="src/android/plugin/google/maps/cluster/MarkerClusterUtil.java" target-dir="src/plugin/google/maps/cluster" />
         <source-file src="src/android/plugin/google/maps/cluster/MarkerJsonData.java" target-dir="src/plugin/google/maps/cluster" />
 
+        <resource-file src="res/drawable/m1_icon.png" target="res/drawable/m1_icon.png" />
+        <resource-file src="res/drawable/m2_icon.png" target="res/drawable/m2_icon.png" />
+        <resource-file src="res/drawable/m3_icon.png" target="res/drawable/m3_icon.png" />
+        <resource-file src="res/drawable/m4_icon.png" target="res/drawable/m4_icon.png" />
+        <resource-file src="res/drawable/m5_icon.png" target="res/drawable/m5_icon.png" />
+        <resource-file src="res/drawable/m6_icon.png" target="res/drawable/m6_icon.png" />
+
         <config-file target="AndroidManifest.xml" parent="/manifest/application">
             <meta-data
               android:name="com.google.android.maps.v2.API_KEY"
