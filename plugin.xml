@@ -4,6 +4,9 @@
     <js-module name="phonegap-googlemaps-plugin" src="www/googlemaps-cdv-plugin.js">
         <clobbers target="plugin.google.maps" />
     </js-module>
+    <js-module name="phonegap-googlemaps-plugin-cluster" src="www/googlemaps-cdv-plugin-marker-cluster.js">
+        <clobbers target="plugin.google.maps.cluster" />
+    </js-module>
 
     
     <description>Google Maps native SDK for Android and iOS</description>
