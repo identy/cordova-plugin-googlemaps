@@ -21,7 +21,8 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.util.Log;
 
-import com.example.myapp.R;
+//import com.example.myapp.R;
+
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
@@ -79,12 +80,13 @@ public class Cluster {
       MarkerOptions opts = new MarkerOptions();
       opts.position(centerLatLng);
       if (list.size() > 1) {
-        int markerId = R.drawable.m1;
+        //int markerId = R.drawable.m1;
+        int markerId = 0;
         cnt = markerHash.size();
-        markerId = cnt > 20 ? R.drawable.m2 : markerId;
-        markerId = cnt > 50 ? R.drawable.m3 : markerId;
-        markerId = cnt > 100 ? R.drawable.m4 : markerId;
-        markerId = cnt > 200 ? R.drawable.m5 : markerId;
+        //markerId = cnt > 20 ? R.drawable.m2 : markerId;
+        //markerId = cnt > 50 ? R.drawable.m3 : markerId;
+        //markerId = cnt > 100 ? R.drawable.m4 : markerId;
+        //markerId = cnt > 200 ? R.drawable.m5 : markerId;
         Bitmap iconBitmap = BitmapFactory.decodeResource(mapCtrl.cordova.getActivity().getResources(), markerId);
         currentIconBitmap = iconBitmap.copy(Bitmap.Config.ARGB_8888, true);
         Canvas iconCanvas = new Canvas(currentIconBitmap);
