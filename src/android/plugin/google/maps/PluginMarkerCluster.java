@@ -22,11 +22,11 @@ import com.google.android.gms.maps.model.LatLngBounds;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.maps.model.PolygonOptions;
 
-import plugin.google.maps.experimental.AsyncCluster;
-import plugin.google.maps.experimental.Cluster;
-import plugin.google.maps.experimental.MarkerCluster;
-import plugin.google.maps.experimental.MarkerClusterUtil;
-import plugin.google.maps.experimental.MarkerJsonData;
+import plugin.google.maps.cluster.AsyncCluster;
+import plugin.google.maps.cluster.Cluster;
+import plugin.google.maps.cluster.MarkerCluster;
+import plugin.google.maps.cluster.MarkerClusterUtil;
+import plugin.google.maps.cluster.MarkerJsonData;
 import android.graphics.Color;
 import android.os.Handler;
 import android.util.Log;

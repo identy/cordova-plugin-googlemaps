@@ -1,4 +1,4 @@
-package plugin.google.maps.experimental;
+package plugin.google.maps.cluster;
 
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.LatLngBounds;

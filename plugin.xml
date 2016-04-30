@@ -44,7 +44,7 @@
                 <param name="android-package" value="plugin.google.maps.MyGeocoder" />
             </feature>
             <feature name="MarkerCluster">
-                <param name="android-package" value="plugin.google.maps.experimental.MarkerCluster" />
+                <param name="android-package" value="plugin.google.maps.cluster.MarkerCluster" />
             </feature>
         </config-file>
 
@@ -76,11 +76,11 @@
         
         <!-- cluster -->
         <source-file src="src/android/plugin/google/maps/PluginMarkerCluster.java" target-dir="src/plugin/google/maps" />
-        <source-file src="src/android/plugin/google/maps/experimental/MarkerCluster.java" target-dir="src/plugin/google/maps/experimental" />
-        <source-file src="src/android/plugin/google/maps/experimental/Cluster.java" target-dir="src/plugin/google/maps/experimental" />
-        <source-file src="src/android/plugin/google/maps/experimental/AsyncCluster.java" target-dir="src/plugin/google/maps/experimental" />
-        <source-file src="src/android/plugin/google/maps/experimental/MarkerClusterUtil.java" target-dir="src/plugin/google/maps/experimental" />
-        <source-file src="src/android/plugin/google/maps/experimental/MarkerJsonData.java" target-dir="src/plugin/google/maps/experimental" />
+        <source-file src="src/android/plugin/google/maps/cluster/MarkerCluster.java" target-dir="src/plugin/google/maps/cluster" />
+        <source-file src="src/android/plugin/google/maps/cluster/Cluster.java" target-dir="src/plugin/google/maps/cluster" />
+        <source-file src="src/android/plugin/google/maps/cluster/AsyncCluster.java" target-dir="src/plugin/google/maps/cluster" />
+        <source-file src="src/android/plugin/google/maps/cluster/MarkerClusterUtil.java" target-dir="src/plugin/google/maps/cluster" />
+        <source-file src="src/android/plugin/google/maps/cluster/MarkerJsonData.java" target-dir="src/plugin/google/maps/cluster" />
 
         <config-file target="AndroidManifest.xml" parent="/manifest/application">
             <meta-data

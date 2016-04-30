@@ -1,4 +1,4 @@
-package plugin.google.maps.experimental;
+package plugin.google.maps.cluster;
 
 import java.util.ArrayList;
 import java.util.List;

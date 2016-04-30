@@ -1,4 +1,4 @@
-package plugin.google.maps.experimental;
+package plugin.google.maps.cluster;
 
 import java.lang.reflect.Field;
 import java.util.HashMap;
