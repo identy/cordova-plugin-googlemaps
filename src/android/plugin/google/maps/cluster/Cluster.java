@@ -77,6 +77,8 @@ public class Cluster {
       markerHashSize = 0;
     }
     
+    //mapCtrl.setClustering(new ClusteringSettings().iconDataProvider(new IconProvider(getResources())));
+
     if (markerHashSize == 0) {
       Iterator<Integer> iterator2 = markerHash.keySet().iterator();
       int jsonHash = iterator2.next();
@@ -92,15 +94,20 @@ public class Cluster {
         //Context activityContext = mapCtrl.cordova.getActivity().getApplicationContext();
         
         //int markerId = R.drawable.m1;
-        int markerId = activityResources.getIdentifier("m1_icon", "drawable", mapCtrl.cordova.getActivity().getPackageName());
+        //int markerId = activityResources.getIdentifier("m1_icon", "drawable", mapCtrl.cordova.getActivity().getPackageName());
+        int markerId = activityResources.getIdentifier("m1", "drawable", mapCtrl.cordova.getActivity().getPackageName());
         Bitmap iconBitmap = BitmapFactory.decodeResource(activityResources, markerId);
         
         cnt = markerHash.size();
         
-        markerId = cnt > 20 ? activityResources.getIdentifier("m2_icon", "drawable", mapCtrl.cordova.getActivity().getPackageName()) : markerId;
-        markerId = cnt > 50 ? activityResources.getIdentifier("m3_icon", "drawable", mapCtrl.cordova.getActivity().getPackageName()) : markerId;
-        markerId = cnt > 100 ? activityResources.getIdentifier("m4_icon", "drawable", mapCtrl.cordova.getActivity().getPackageName()) : markerId;
-        markerId = cnt > 200 ? activityResources.getIdentifier("m5_icon", "drawable", mapCtrl.cordova.getActivity().getPackageName()) : markerId;
+        //markerId = cnt > 20 ? activityResources.getIdentifier("m2_icon", "drawable", mapCtrl.cordova.getActivity().getPackageName()) : markerId;
+        markerId = cnt > 20 ? activityResources.getIdentifier("m2", "drawable", mapCtrl.cordova.getActivity().getPackageName()) : markerId;
+        //markerId = cnt > 50 ? activityResources.getIdentifier("m3_icon", "drawable", mapCtrl.cordova.getActivity().getPackageName()) : markerId;
+        markerId = cnt > 50 ? activityResources.getIdentifier("m3", "drawable", mapCtrl.cordova.getActivity().getPackageName()) : markerId;
+        //markerId = cnt > 100 ? activityResources.getIdentifier("m4_icon", "drawable", mapCtrl.cordova.getActivity().getPackageName()) : markerId;
+        markerId = cnt > 100 ? activityResources.getIdentifier("m4", "drawable", mapCtrl.cordova.getActivity().getPackageName()) : markerId;
+        //markerId = cnt > 200 ? activityResources.getIdentifier("m5_icon", "drawable", mapCtrl.cordova.getActivity().getPackageName()) : markerId;
+        markerId = cnt > 200 ? activityResources.getIdentifier("m5", "drawable", mapCtrl.cordova.getActivity().getPackageName()) : markerId;
         
         //Bitmap iconBitmap = BitmapFactory.decodeResource(mapCtrl.cordova.getActivity().getResources(), markerId);
         currentIconBitmap = iconBitmap.copy(Bitmap.Config.ARGB_8888, true);

@@ -76,11 +76,15 @@
         
         <!-- cluster -->
         <source-file src="src/android/plugin/google/maps/PluginMarkerCluster.java" target-dir="src/plugin/google/maps" />
+        
         <source-file src="src/android/plugin/google/maps/cluster/MarkerCluster.java" target-dir="src/plugin/google/maps/cluster" />
         <source-file src="src/android/plugin/google/maps/cluster/Cluster.java" target-dir="src/plugin/google/maps/cluster" />
         <source-file src="src/android/plugin/google/maps/cluster/AsyncCluster.java" target-dir="src/plugin/google/maps/cluster" />
         <source-file src="src/android/plugin/google/maps/cluster/MarkerClusterUtil.java" target-dir="src/plugin/google/maps/cluster" />
         <source-file src="src/android/plugin/google/maps/cluster/MarkerJsonData.java" target-dir="src/plugin/google/maps/cluster" />
+        
+        <!--<source-file src="src/android/plugin/google/maps/cluster/IconProvider.java" target-dir="src/plugin/google/maps/cluster" />-->
+        <!--<source-file src="src/android/plugin/google/maps/cluster/MarkerGenerator.java" target-dir="src/plugin/google/maps/cluster" />-->
 
         <resource-file src="res/drawable/m1_icon.png" target="res/drawable/m1_icon.png" />
         <resource-file src="res/drawable/m2_icon.png" target="res/drawable/m2_icon.png" />
