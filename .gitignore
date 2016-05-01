@@ -33,7 +33,7 @@ proguard/
 .idea/
 build/
 
-ClusterMap2/
+-clusterM2/
 
 # platform assets
 platforms/android/assets/www/*
