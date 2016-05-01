@@ -5,6 +5,10 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 
+import android.content.Context;
+import android.content.Intent;
+import android.content.res.Resources;
+
 import org.apache.cordova.CallbackContext;
 import org.apache.cordova.CordovaWebView;
 import org.apache.cordova.PluginResult;
@@ -20,6 +24,9 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.util.Log;
+
+import org.json.JSONArray;
+import org.json.JSONException;
 
 //import com.example.myapp.R;
 
@@ -81,18 +88,18 @@ public class Cluster {
       opts.position(centerLatLng);
       if (list.size() > 1) {
         
-        Resources activityRes = cordova.getActivity().getResources();
+        Resources activityRes = mapCtrl.cordova.getActivity().getResources();
         
         //int markerId = R.drawable.m1;
-        int markerId = activityRes.getIdentifier("m1_icon", "drawable", cordova.getActivity().getPackageName());
+        int markerId = activityRes.getIdentifier("m1_icon", "drawable", mapCtrl.cordova.getActivity().getPackageName());
         Bitmap iconBitmap = BitmapFactory.decodeResource(activityRes, iconId);
         
         cnt = markerHash.size();
         
-        markerId = cnt > 20 ? activityRes.getIdentifier("m2_icon", "drawable", cordova.getActivity().getPackageName()) : markerId;
-        markerId = cnt > 50 ? activityRes.getIdentifier("m3_icon", "drawable", cordova.getActivity().getPackageName()) : markerId;
-        markerId = cnt > 100 ? activityRes.getIdentifier("m4_icon", "drawable", cordova.getActivity().getPackageName()) : markerId;
-        markerId = cnt > 200 ? activityRes.getIdentifier("m5_icon", "drawable", cordova.getActivity().getPackageName()) : markerId;
+        markerId = cnt > 20 ? activityRes.getIdentifier("m2_icon", "drawable", mapCtrl.cordova.getActivity().getPackageName()) : markerId;
+        markerId = cnt > 50 ? activityRes.getIdentifier("m3_icon", "drawable", mapCtrl.cordova.getActivity().getPackageName()) : markerId;
+        markerId = cnt > 100 ? activityRes.getIdentifier("m4_icon", "drawable", mapCtrl.cordova.getActivity().getPackageName()) : markerId;
+        markerId = cnt > 200 ? activityRes.getIdentifier("m5_icon", "drawable", mapCtrl.cordova.getActivity().getPackageName()) : markerId;
         
         //Bitmap iconBitmap = BitmapFactory.decodeResource(mapCtrl.cordova.getActivity().getResources(), markerId);
         currentIconBitmap = iconBitmap.copy(Bitmap.Config.ARGB_8888, true);
