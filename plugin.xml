@@ -86,12 +86,17 @@
         <!--<source-file src="src/android/plugin/google/maps/cluster/IconProvider.java" target-dir="src/plugin/google/maps/cluster" />-->
         <!--<source-file src="src/android/plugin/google/maps/cluster/MarkerGenerator.java" target-dir="src/plugin/google/maps/cluster" />-->
 
-        <resource-file src="res/drawable/m1_icon.png" target="res/drawable/m1_icon.png" />
-        <resource-file src="res/drawable/m2_icon.png" target="res/drawable/m2_icon.png" />
-        <resource-file src="res/drawable/m3_icon.png" target="res/drawable/m3_icon.png" />
-        <resource-file src="res/drawable/m4_icon.png" target="res/drawable/m4_icon.png" />
-        <resource-file src="res/drawable/m5_icon.png" target="res/drawable/m5_icon.png" />
-        <resource-file src="res/drawable/m6_icon.png" target="res/drawable/m6_icon.png" />
+        <!--<resource-file src="res/drawable/m1_icon.png" target="res/drawable/m1_icon.png" />-->
+        <resource-file src="res/drawable/m1.png" target="res/drawable/m1.png" />
+        <!--<resource-file src="res/drawable/m2_icon.png" target="res/drawable/m2_icon.png" />-->
+        <resource-file src="res/drawable/m2.png" target="res/drawable/m2.png" />
+        <!--<resource-file src="res/drawable/m3_icon.png" target="res/drawable/m3_icon.png" />-->
+        <resource-file src="res/drawable/m3.png" target="res/drawable/m3.png" />
+        <!--<resource-file src="res/drawable/m4_icon.png" target="res/drawable/m4_icon.png" />-->
+        <resource-file src="res/drawable/m4.png" target="res/drawable/m4.png" />
+        <!--<resource-file src="res/drawable/m5_icon.png" target="res/drawable/m5_icon.png" />-->
+        <resource-file src="res/drawable/m5.png" target="res/drawable/m5.png" />
+        <!--<resource-file src="res/drawable/m6_icon.png" target="res/drawable/m6_icon.png" />-->
 
         <config-file target="AndroidManifest.xml" parent="/manifest/application">
             <meta-data
